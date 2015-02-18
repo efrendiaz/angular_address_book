@@ -13,6 +13,10 @@ angular.module('addressBookApp').config(function($stateProvider) {
     url: '/contacts/:id/edit',
     templateUrl: 'partials/contact-edit.html',
     controller: 'ContactEditController'
+  }).state('newContact', { //state for adding a new contact
+    url: '/contacts/new',
+    templateUrl: 'partials/contact-add.html',
+    controller: 'ContactCreateController'
   });
 }).run(function($state) {
   $state.go('contacts'); //make a transition to movies state when app starts
