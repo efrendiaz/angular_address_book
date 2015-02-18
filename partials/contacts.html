@@ -1,0 +1,16 @@
+<h3>Contacts</h3>
+
+<table class="table table-striped">
+  <thead><tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Address</th>
+  </tr></thead>
+  <tbody><tr ng-repeat="contact in contacts">
+    <td>{{ contact.first_name }}</td>
+    <td>{{ contact.last_name }}</td>
+    <td>{{ contact.email }}</td>
+    <td>{{ contact.address }}</td>
+  </tr></tbody>
+</table>
